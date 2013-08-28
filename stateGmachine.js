@@ -51,7 +51,7 @@
     }
   }
 
-  exports.GMachine = gMachine;
+  exports.GMachine = GMachine;
 
   exports.GMonad = Monad;
 
