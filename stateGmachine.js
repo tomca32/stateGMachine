@@ -52,12 +52,6 @@
     return this;
   }
 
-  // Monad.prototype.delegate = function (fName) {
-  //   if (typeof this.value.fName !== 'function') throw New Error ('Contained object does not have property: '+fName);
-
-  //   return this.value.fName.call(this);
-  // };
-
   function GMachine (states) {
     if (typeof states !== 'object') throw new Error('invalid argument type, state must be an object or array of objects');
     this.currentState = 0;
