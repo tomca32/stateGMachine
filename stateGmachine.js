@@ -42,7 +42,7 @@
   };
 
   Monad.prototype.pause = function(time) {
-    if (typeof time !== 'number') throw new Error ('Method argument not a number. Method pause accepts only a single number type argument.');
+    if (typeof time !== 'number' || isNaN(time)) throw new Error ('Method argument not a number. Method pause accepts only a single number type argument.');
     var that = this;
     this.then(function(){
       setTimeout(function(){
